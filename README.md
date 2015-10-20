@@ -1,53 +1,66 @@
-Freshman21
-==========
-
-Freshman21 is a Jekyll blog theme, base on theme [Freshman](http://github.com/yulijia/freshman). 
-
-A tribute to WordPress Theme Twenty-Twelve and Twenty-eleven.
-
-Enjoy.
+# Planet Jekyll Starter Theme - Minimial
 
 
-![Screen](http://i.imgur.com/oSp7kacl.png)
+A minimalistic Jekyll starter theme for "classic" web sites (e.g. just some web pages)
 
-### Version 2.0 update 2015.03.31
-
-- master branch: the simplest template, original version.
-
-- gh-pages branch: master branch with google analytics js template, BackToTop js script, readmore module.
-
-Clone master branch: 
- 
-`git clone https://github.com/yulijia/freshman21.git -b master --single-branch`
- 
-Clone gh-pages branch: 
- 
-`git clone https://github.com/yulijia/freshman21.git -b gh-pages --single-branch`
-
-
-### How to install this theme?
 
 ```
-# please make sure you have already installed git tools and ruby tools(gem)
-$ gem install sass
-$ gem install jekyll
-$ git clone https://github.com/yulijia/freshman21.git
-$ mv freshman21/ yourblogname.github.io/
+├── _config.yml                  # site configuration
+├── _layouts
+|   └── default.html             # master layout template
+├── css
+|   └── style.css                # styles
+├── three.html                   # another sample page (in hypertext markup e.g. html)
+├── two.md                       # another sample page (in markdown e.g. md)
+└── index.md                     # index (start) sample page (in markdown e.g. md)
 ```
 
-### A Summary of Features
+Becomes
 
-- Provide single column and two columns layout
-- Powerful configure file
-- Comments by Disqus
-- Support LaTeX (by MathJax)
-- Syntax highlighting
+```
+└── _site                        # output build folder; site gets generated here
+    ├── css
+    |   └── style.css            # styles for pages (copied 1:1 as is)
+    ├── three.html               # another sample page
+    ├── two.html                 # another sample page 
+    └── index.html               # index (start) sample page
+```
+
+### Live Demo
+
+See a live demo @ [`planetjekyll.github.io/jekyll-starter-theme` »](http://planetjekyll.github.io/jekyll-starter-theme)
 
 
-### Demo
+### Version 2.0
 
-Single column, please see [my own blog](http://yulijia.net/en/)
+Note: For a more "advanced" starter theme, see the
+[Planet Jekyll Starter Theme V2](https://github.com/planetjekyll/jekyll-starter-theme-v2).
+The V2 includes:
 
-Two columns, please see the [theme website](http://yulijia.net/freshman21/)
+- Shared (common) template/page building blocks using `_includes` e.g. `head.html`, `header.html`, `footer.html` etc.
+- CSS preprocessing using Sass/SCSS e.g. `_settings.scss` with `$link-color` etc.
+- Nav(igation) menu (auto-)built using a configuration / data block
+- And more
 
+### More Themes
+
+See the [Dr. Jekyll's Themes](https://drjekyllthemes.github.io) directory.
+
+
+### More Quick Starter Wizard Scripts
+
+See the [Mr. Hyde's Scripts](https://github.com/mrhydescripts/scripts) library.
+
+
+
+## Meta
+
+#### License
+
+The starter theme is dedicated to the public domain.
+Use it as you please with no restrictions whatsoever.
+
+#### Questions? Comments?
+
+Post them to the [wwwmake forum](http://groups.google.com/group/wwwmake). Thanks!
 
